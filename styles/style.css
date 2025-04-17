@@ -91,6 +91,86 @@ h1 {
     font-weight: bold;
     font-size: 1rem;
 }
+ 
+
+/* Css for the Form */
+#bookingform {
+    max-width: 400px;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+#bookingform label{
+    font-weight: bold;
+}
+
+#bookingform input {
+    padding: 8px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#bookingform button {
+    margin-top: 8px;
+    padding: 10px;
+    font-size: 1rem;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
 
 
+#bookingform button:hover {
+    background-color: #218838;
+}
+
+/* cart table styling */
+
+.ticket-table {
+    width: 90%;
+    margin: 0 auto 30px;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.ticket-header {
+    background-color: #f2f2f2;
+}
+
+.ticket-table th,
+.ticket-table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+.total-label {
+    text-align: right;
+    font-weight: bold;
+    padding: 10px;
+}
+
+#grand-total {
+    font-weight: bold;
+    padding: 10px;
+}
+
+.checkout-button {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.checkout-button button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
 
