@@ -18,5 +18,61 @@
             </ul>
         </nav>
     </header>
+
+    <h1> CHECKOUT</h1>
+    <!-- the table that shows the user added items (cart table) -->
+    <h2 class="section-title">Your Selected Tickets</h2>
+    <div id="selected-tickets">
+        <table class="ticket-table">
+            <thead>
+                <tr class="ticket-header">
+                    <th>Movie</th>
+                    <th>Category</th>
+                    <th>Tickets</th>
+                    <th>Price</th>
+                    <th>Total</th>
+                </tr>
+            </thead>
+
+            <tbody id="checkout-cart-body">
+                <!-- the data here will be added from the js -->
+            </tbody>
+
+            <tfoot>
+                <tr>
+                    <td colspan="4" class="total-label">Grand Total: </td>
+                    <td id="checkout-grand-total">$0</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+
+    <!-- checkout form -->
+    
+    <h2 class="section-title">Enter Your Details</h2>
+    <form id="checkout-form">
+        <label for="fullname">Full Name: </label>
+        <input type="text" id="fullname" name="fullname" required>
+
+        <label for="email">Email Address: </label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="phone">Phone Number: </label>
+        <input type="tel" id="phone" name="phone" required>
+
+        <label for="seats">Seat Preferences: </label>
+        <input type="text" id="seats" name="seats" placeholder="e.g A1, A2" required>
+
+        <label for="card">Payment Info: </label>
+        <input type="text" id="card" name="card" placeholder="Card Number" required>
+
+        <button type="submit">Pay</button>
+
+    </form>
+
+    <div id="confirmation" style="display: none; text-align: center; margin-top: 20px;">
+        <!-- the pop when the pay button is clicked -->
+    </div>
+
 </body>
 </html>
