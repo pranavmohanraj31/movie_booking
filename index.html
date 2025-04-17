@@ -164,5 +164,60 @@
             <p>Shrek</p>
         </div>
     </div>
+
+    <!-- Booking Form -->
+     <h2 class="section-title">Book Your Tickets</h2>
+     <form id="bookingform">
+
+        <label for="movie">Movie Name: </label>
+        <input type="text" id="movie" readonly>
+
+        <label for="category">Category: </label>
+        <input type="text" id="category" readonly>
+
+        <label for="price">Price Per Ticket: </label>
+        <input type="text" id="price" readonly>
+
+        <label for="seats">Number of Tickets: </label>
+        <input type="number" id="seats" min="1" value="1" required>
+
+        <!-- Save and apply fav buttons -->
+        <div>
+            <button type="submit">Add to Cart</button>
+            <button type="button" onclick="">Save as Favourites</button>
+            <button type="button" onclick="">Apply Favourites</button>
+        </div>
+     </form>
+
+     <!-- Booking Cart Table -->
+
+     <h2 class="section-title">Selected Tickets</h2>
+     <table class="ticket-table">
+
+        <thead>
+            <tr class="ticket-header">
+                <th>Movie</th>
+                <th>Category</th>
+                <th>Tickets</th>
+                <th>Price</th>
+                <th>Total</th>
+            </tr>
+        </thead>
+        <tbody id="cart-body"></tbody>
+        <tfoot>
+            <tr>
+                <td colspan="4" class="total-label">Grand Total: </td>
+                <td id="grand-total">$0</td>
+            </tr>
+        </tfoot>
+     </table>
+
+     <!-- Checkout Button -->
+     <div class="checkout-button">
+        <a href="checkout.html">
+            <button>Proceed To Checkout</button>
+        </a>
+     </div>
+
 </body>
 </html>

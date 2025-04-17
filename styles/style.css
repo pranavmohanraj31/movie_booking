@@ -36,9 +36,23 @@
     border-bottom: 3px solid rgb(0, 0, 0) ;
 }
 
+
+/* The css for titles  */
+
+h1 {
+    text-align: center;
+    margin: 20px 0 30px;
+}
+
+.section-title{
+    text-align: center;
+    font-size: 1.6rem;
+    margin: 40px 0 30px;
+}
+
 /* Pictures css */
 
-/* (the class movie grid) - (contains everything in a movie tablet, movie name, and image)) */
+/* (the class movie grid (container)) - (contains everything in a movie tablet, movie name, and image)) */
 
 .movie-grid {
     display: grid;
@@ -76,5 +90,7 @@
     margin-top: 10px;
     font-weight: bold;
     font-size: 1rem;
-    
 }
+
+
+
