@@ -174,3 +174,47 @@ h1 {
     border-radius: 5px;
 }
 
+/* checkout css - starts here */
+
+#checkout-form {
+    max-width: 400px;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#checkout-form label {
+    font-weight: bold;
+}
+
+#checkout-form input {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#checkout-form button {
+    margin-top: 10px;
+    padding: 12px;
+    font-size: 1rem;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#checkout-form button:hover {
+    background-color: #218838;
+}
+
+/* checkout page - cart table css (since most 
+of the css is already done in the previous index page code,
+here there will only be the relevent new css) */
+
+#checkout-grand-total {
+    font-weight: bold;
+    padding: 10px;
+}
